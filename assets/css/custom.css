@@ -3095,4 +3095,174 @@ body.landing-page #content {
   }
 }
 
+/* ============================================
+   PAGE CRÉDITS PHOTOS
+   ============================================ */
+
+.credits-hero {
+  text-align: center;
+  padding: 3rem 0 4rem 0;
+  background: linear-gradient(135deg, rgba(115, 185, 9, 0.05) 0%, rgba(42, 125, 236, 0.05) 100%);
+  margin-bottom: 2rem;
+}
+
+.credits-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1E2939;
+  margin-bottom: 1rem;
+  font-family: 'Nunito', 'Poppins', sans-serif;
+}
+
+.credits-intro {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: #555555;
+  font-weight: 400;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.credits-content {
+  padding: 4rem 0;
+  background-color: #ffffff;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.credits-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.credit-item {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #73b909;
+}
+
+.credit-item h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1E2939;
+  margin-bottom: 1.25rem;
+  font-family: 'Nunito', 'Poppins', sans-serif;
+}
+
+.credit-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.credit-item li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555555;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.credit-item li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #73b909;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.credit-item li strong {
+  color: #1E2939;
+  font-weight: 600;
+}
+
+.credit-item a {
+  color: #73b909;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.3s ease;
+}
+
+.credit-item a:hover {
+  color: #5a9407;
+}
+
+.credits-note {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: #e8f5e9;
+  border-radius: 8px;
+  border: 1px solid rgba(115, 185, 9, 0.2);
+}
+
+.credits-note p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555555;
+}
+
+.credits-note a {
+  color: #73b909;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.3s ease;
+}
+
+.credits-note a:hover {
+  color: #5a9407;
+}
+
+/* Responsive pour la page crédits */
+@media (max-width: 768px) {
+  .credits-hero {
+    padding: 2rem 0 3rem 0;
+  }
+
+  .credits-title {
+    font-size: 2rem;
+  }
+
+  .credits-intro {
+    font-size: 1.125rem;
+  }
+
+  .credits-content {
+    padding: 3rem 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .credits-list {
+    gap: 2rem;
+  }
+
+  .credit-item {
+    padding: 1.5rem;
+  }
+
+  .credit-item h3 {
+    font-size: 1.25rem;
+  }
+
+  .credit-item li {
+    font-size: 0.95rem;
+  }
+}
+
 
