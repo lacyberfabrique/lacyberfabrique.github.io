@@ -1,0 +1,43 @@
+# Site settings
+title: Alterra - Réseau participatif de collecte de données
+description: "Alterra est un réseau participatif de collecte de données, construit par sa communauté pour le territoire : une infrastructure partagée, une gouvernance collective et une valeur commune."
+author: La Cyber Fabrique
+organization: Alterra
+baseurl: ""
+url: "https://alterra.lacyber.fr"
+language: fr-FR
+
+# Build settings
+# theme: minima  # Désactivé pour utiliser nos propres layouts
+plugins:
+  - jekyll-feed
+
+# Navigation
+navigation:
+  - title: Le Réseau
+    url: /reseau/
+    weight: 1
+  - title: Contribuer
+    url: /contribuer/
+    weight: 2
+  - title: Usages
+    url: /usages/
+    weight: 3
+  - title: La Charte
+    url: /charte/
+    weight: 4
+  - title: Contact
+    url: /contact/
+    weight: 5
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

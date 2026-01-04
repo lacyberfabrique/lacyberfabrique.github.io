@@ -1,0 +1,22 @@
+<header class="site-header">
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">
+        <a href="{{ '/' | relative_url }}">
+          <img src="{{ '/assets/images/logo-alterra.png' | relative_url }}" alt="{{ site.title }}" class="navbar-logo">
+        </a>
+      </div>
+      <div class="navbar-menu">
+        {% for item in site.navigation %}
+        <a href="{{ item.url | relative_url }}" class="navbar-link">{{ item.title }}</a>
+        {% endfor %}
+      </div>
+      <button class="navbar-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+

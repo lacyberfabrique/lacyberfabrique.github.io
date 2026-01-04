@@ -1,0 +1,486 @@
+---
+layout: page
+description: "Comprendre comment fonctionne le réseau Alterra basé sur LoRaWAN et comment il est construit par sa communauté."
+---
+
+<div class="reseau-hero">
+  <div class="container">
+    <h1 class="reseau-title">Le réseau Alterra</h1>
+    <p class="reseau-subtitle">Un réseau participatif de collecte de données basé sur LoRaWAN, <br> construit et maintenu par sa communauté.</p>
+  </div>
+</div>
+
+<section class="reseau-section reseau-section-alt" data-aos="fade-up">
+  <div class="container">
+    <div class="reseau-section-header">
+      <span class="reseau-badge">Technologie</span>
+      <h2 class="reseau-section-title">Qu'est-ce que LoRaWAN ?</h2>
+    </div>
+    <div class="reseau-content">
+      <p>Alterra utilise la technologie <strong>LoRaWAN</strong> (Long Range Wide Area Network), un protocole de communication sans fil conçu spécifiquement pour l'Internet des Objets (IoT). LoRaWAN permet des communications longue distance avec une consommation d'énergie très faible.</p>
+      <p>Contrairement au Wi-Fi ou à la 4G/5G, LoRaWAN est optimisé pour transmettre de petites quantités de données sur de très longues distances, jusqu'à 10 kilomètres en zone rurale et 2 kilomètres en zone urbaine. Cette technologie fonctionne dans des bandes de fréquences libres (ISM), sans nécessiter de licence ni d'abonnement.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reseau-section" data-aos="fade-up">
+  <div class="container">
+    <div class="reseau-section-header">
+      <span class="reseau-badge">Avantages</span>
+      <h2 class="reseau-section-title">Pourquoi LoRaWAN ?</h2>
+    </div>
+    <div class="reseau-advantages">
+      <div class="advantage-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="advantage-icon">📡</div>
+        <h3 class="advantage-title">Longue portée</h3>
+        <p class="advantage-text">Une seule passerelle peut couvrir plusieurs kilomètres carrés, idéal pour un réseau territorial</p>
+      </div>
+      <div class="advantage-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="advantage-icon">🔋</div>
+        <h3 class="advantage-title">Faible consommation</h3>
+        <p class="advantage-text">Les capteurs peuvent fonctionner sur batterie pendant plusieurs années</p>
+      </div>
+      <div class="advantage-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="advantage-icon">💰</div>
+        <h3 class="advantage-title">Coût réduit</h3>
+        <p class="advantage-text">Pas de licence ni d'abonnement, les fréquences sont libres</p>
+      </div>
+      <div class="advantage-item" data-aos="fade-up" data-aos-delay="400">
+        <div class="advantage-icon">🏢</div>
+        <h3 class="advantage-title">Pénétration</h3>
+        <p class="advantage-text">Bonne couverture en intérieur et dans les bâtiments multi-étages</p>
+      </div>
+      <div class="advantage-item" data-aos="fade-up" data-aos-delay="500">
+        <div class="advantage-icon">🔒</div>
+        <h3 class="advantage-title">Sécurité</h3>
+        <p class="advantage-text">Chiffrement AES-128 de bout en bout</p>
+      </div>
+      <div class="advantage-item" data-aos="fade-up" data-aos-delay="600">
+        <div class="advantage-icon">⚡</div>
+        <h3 class="advantage-title">Capacité</h3>
+        <p class="advantage-text">Un réseau peut gérer des millions de messages provenant de milliers de passerelles</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reseau-section reseau-section-alt" data-aos="fade-up">
+  <div class="container">
+    <div class="reseau-section-header">
+      <span class="reseau-badge">Architecture</span>
+    </div>
+    
+    <div class="reseau-tabs" role="tablist">
+      <input type="radio" name="reseau-tabs" id="tab-gateway" checked/>
+      <label
+          for="tab-gateway"
+          role="tab"
+          aria-selected="true"
+          aria-controls="panel-gateway"
+          tabindex="0"
+          class="reseau-tab-button"
+      >
+          Passerelles
+      </label>
+      <input type="radio" name="reseau-tabs" id="tab-nodes"/>
+      <label
+          for="tab-nodes"
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-nodes"
+          tabindex="0"
+          class="reseau-tab-button"
+      >
+          Capteurs
+      </label>
+      <input type="radio" name="reseau-tabs" id="tab-server"/>
+      <label
+          for="tab-server"
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-server"
+          tabindex="0"
+          class="reseau-tab-button"
+      >
+          Serveur réseau
+      </label>
+      <input type="radio" name="reseau-tabs" id="tab-applications"/>
+      <label
+          for="tab-applications"
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-applications"
+          tabindex="0"
+          class="reseau-tab-button"
+      >
+          Applications
+      </label>
+    </div>
+
+    <div id="panel-gateway" class="reseau-tab-content" role="tabpanel" aria-labelledby="tab-gateway" aria-hidden="false">
+      <div class="reseau-tab-info">
+        <div class="reseau-tab-text">
+          <h3 class="reseau-tab-title">Les passerelles<br><span class="reseau-tab-subtitle">(Gateways)</span></h3>
+          <p class="reseau-tab-description">Stations de base installées et hébergées par la communauté. Elles reçoivent les messages des capteurs et les transmettent au serveur réseau. Propriété des contributeurs, elles forment une infrastructure commune.</p>
+          <p class="reseau-tab-description">Chaque passerelle étend la couverture du réseau et renforce sa résilience. Plus il y a de passerelles, plus le réseau est robuste et performant.</p>
+        </div>
+        <figure class="reseau-tab-figure">
+          <figcaption class="reseau-tab-caption">Passerelle LoRaWAN installée sur un bâtiment agricole</figcaption>
+          <img
+              class="reseau-tab-image"
+              src="{{ '/assets/images/gateway-1.jpg' | relative_url }}"
+              alt="Passerelles LoRaWAN"
+          />
+        </figure>
+      </div>
+    </div>
+
+    <div id="panel-nodes" class="reseau-tab-content" role="tabpanel" aria-labelledby="tab-nodes" aria-hidden="true" style="display:none;">
+      <div class="reseau-tab-info">
+        <div class="reseau-tab-text">
+          <h3 class="reseau-tab-title">Les capteurs<br><span class="reseau-tab-subtitle">(Nodes)</span></h3>
+          <p class="reseau-tab-description">Dispositifs qui collectent les données sur le terrain (température, humidité, qualité de l'air, etc.). Ils communiquent avec les passerelles via LoRaWAN et fonctionnent de manière autonome pendant plusieurs années.</p>
+          <p class="reseau-tab-description">Grâce à la faible consommation énergétique de LoRaWAN, ces capteurs peuvent fonctionner sur batterie pendant plusieurs années, ce qui les rend idéaux pour des déploiements en extérieur ou dans des zones difficiles d'accès.</p>
+        </div>
+        <figure class="reseau-tab-figure">
+          <figcaption class="reseau-tab-caption">Prototype de capteur LoRaWAN pour la mesure du niveau d'eau d'une cuve </figcaption>
+          <img
+              class="reseau-tab-image"
+              src="{{ '/assets/images/node-1.jpg' | relative_url }}"
+              alt="Capteurs LoRaWAN"
+          />
+        </figure>
+      </div>
+    </div>
+
+    <div id="panel-server" class="reseau-tab-content" role="tabpanel" aria-labelledby="tab-server" aria-hidden="true" style="display:none;">
+      <div class="reseau-tab-info">
+        <div class="reseau-tab-text">
+          <h3 class="reseau-tab-title">Le serveur réseau<br><span class="reseau-tab-subtitle">(Network Server Chirpstack)</span></h3>
+          <p class="reseau-tab-description">Gère l'authentification des dispositifs, le routage des messages vers les applications appropriées, et assure la sécurité des communications. Géré collectivement par la communauté.</p>
+          <p class="reseau-tab-description">Le serveur réseau est le cœur technique du réseau. Il coordonne toutes les communications entre les passerelles, les capteurs et les applications, tout en garantissant la sécurité et la fiabilité des transmissions.</p>
+        </div>
+        <figure class="reseau-tab-figure">
+          <figcaption class="reseau-tab-caption">Interface du serveur réseau Chirpstack</figcaption>
+          <img
+              class="reseau-tab-image"
+              src="{{ '/assets/images/network-server.png' | relative_url }}"
+              alt="Serveur réseau Chirpstack"
+          />
+        </figure>
+      </div>
+    </div>
+
+    <div id="panel-applications" class="reseau-tab-content" role="tabpanel" aria-labelledby="tab-applications" aria-hidden="true" style="display:none;">
+      <div class="reseau-tab-info">
+        <div class="reseau-tab-text">
+          <h3 class="reseau-tab-title">Les applications<br><span class="reseau-tab-subtitle">(Thingsboard, Home Assistant, n8n, ...)</span></h3>
+          <p class="reseau-tab-description">Plateformes logicielles qui traitent, visualisent et exploitent les données collectées pour des usages concrets. Chaque projet conserve la maîtrise de ses données et de ses usages.</p>
+          <p class="reseau-tab-description">Ces applications permettent de transformer les données brutes en informations exploitables : tableaux de bord, alertes, automatisations, analyses. Chaque utilisateur choisit l'outil qui correspond le mieux à ses besoins.</p>
+        </div>
+        <div class="reseau-tab-carousel">
+          <div class="carousel-container">
+            <div class="carousel-slides">
+              <div class="carousel-slide active">
+                <figure class="reseau-tab-figure">
+                  <figcaption class="reseau-tab-caption">Workflow n8n pour le pilotage d'un équipement de chauffage</figcaption>
+                  <img
+                      class="reseau-tab-image"
+                      src="{{ '/assets/images/application-1.png' | relative_url }}"
+                      alt="Application IoT 1"
+                  />
+                </figure>
+              </div>
+              <div class="carousel-slide">
+                <figure class="reseau-tab-figure">
+                  <figcaption class="reseau-tab-caption">Home Assistant pour la visualisation des données d'un tracker gps</figcaption>
+                  <img
+                      class="reseau-tab-image"
+                      src="{{ '/assets/images/application-2.png' | relative_url }}"
+                      alt="Application IoT 2"
+                  />
+                </figure>
+              </div>
+              <div class="carousel-slide">
+                <figure class="reseau-tab-figure">
+                  <figcaption class="reseau-tab-caption">Dashboard Thingsboard pour la visualisation des données d'un poulailler</figcaption>
+                  <img
+                      class="reseau-tab-image"
+                      src="{{ '/assets/images/application-3.png' | relative_url }}"
+                      alt="Application IoT 3"
+                  />
+                </figure>
+              </div>
+            </div>
+            <div class="carousel-indicators">
+              <button class="carousel-indicator active" aria-label="Image 1" data-slide="0"></button>
+              <button class="carousel-indicator" aria-label="Image 2" data-slide="1"></button>
+              <button class="carousel-indicator" aria-label="Image 3" data-slide="2"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Gestion des onglets pour la section architecture
+  (function() {
+    'use strict';
+    
+    // Vérifier si on est sur mobile
+    const isMobile = window.innerWidth <= 767;
+    
+    // Sur mobile, afficher tous les contenus
+    if (isMobile) {
+      const panels = document.querySelectorAll('.reseau-tab-content');
+      for (var i = 0; i < panels.length; i++) {
+        panels[i].style.display = 'flex';
+        panels[i].setAttribute('aria-hidden', 'false');
+      }
+      return; // Ne pas initialiser les onglets sur mobile
+    }
+    
+    // Sur desktop, gestion normale des onglets
+    const tabs = document.querySelectorAll('input[name="reseau-tabs"]');
+    var prev = null;
+    
+    for (var i = 0; i < tabs.length; i++) {
+      tabs[i].addEventListener('change', function() {
+        if (this !== prev) {
+          prev = this;
+          const panels = document.querySelectorAll('.reseau-tab-content');
+          for (var j = 0; j < panels.length; j++) {
+            panels[j].style.display = 'none';
+            panels[j].setAttribute('aria-hidden', 'true');
+          }
+          
+          const labels = document.querySelectorAll('.reseau-tab-button');
+          for (var k = 0; k < labels.length; k++) {
+            labels[k].setAttribute('aria-selected', 'false');
+          }
+          
+          if (this.id === 'tab-gateway') {
+            const panel = document.getElementById('panel-gateway');
+            panel.style.display = 'flex';
+            panel.setAttribute('aria-hidden', 'false');
+            document.querySelector('label[for="tab-gateway"]').setAttribute('aria-selected', 'true');
+          } else if (this.id === 'tab-nodes') {
+            const panel = document.getElementById('panel-nodes');
+            panel.style.display = 'flex';
+            panel.setAttribute('aria-hidden', 'false');
+            document.querySelector('label[for="tab-nodes"]').setAttribute('aria-selected', 'true');
+          } else if (this.id === 'tab-server') {
+            const panel = document.getElementById('panel-server');
+            panel.style.display = 'flex';
+            panel.setAttribute('aria-hidden', 'false');
+            document.querySelector('label[for="tab-server"]').setAttribute('aria-selected', 'true');
+          } else if (this.id === 'tab-applications') {
+            const panel = document.getElementById('panel-applications');
+            panel.style.display = 'flex';
+            panel.setAttribute('aria-hidden', 'false');
+            document.querySelector('label[for="tab-applications"]').setAttribute('aria-selected', 'true');
+          }
+        }
+      });
+    }
+  })();
+  
+  // Gestion du carousel d'images pour l'onglet Applications
+  (function() {
+    'use strict';
+    
+    const carousel = document.querySelector('.reseau-tab-carousel');
+    if (!carousel) return;
+    
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const indicators = carousel.querySelectorAll('.carousel-indicator');
+    const applicationsPanel = document.getElementById('panel-applications');
+    
+    if (slides.length === 0) return;
+    
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+    let autoPlayInterval = null;
+    
+    // Initialiser : s'assurer que la première slide est active
+    if (slides.length > 0 && !slides[0].classList.contains('active')) {
+      slides[0].classList.add('active');
+      if (indicators[0]) {
+        indicators[0].classList.add('active');
+      }
+    }
+    
+    function showSlide(index) {
+      if (index < 0 || index >= totalSlides) return;
+      
+      // Retirer la classe active de toutes les slides et indicateurs
+      slides.forEach(slide => slide.classList.remove('active'));
+      indicators.forEach(indicator => indicator.classList.remove('active'));
+      
+      // Ajouter la classe active à la slide et indicateur courants
+      if (slides[index]) {
+        slides[index].classList.add('active');
+      }
+      if (indicators[index]) {
+        indicators[index].classList.add('active');
+      }
+      
+      currentSlide = index;
+    }
+    
+    function nextSlide() {
+      const next = (currentSlide + 1) % totalSlides;
+      showSlide(next);
+    }
+    
+    function startAutoPlay() {
+      // Arrêter l'auto-play existant s'il y en a un
+      if (autoPlayInterval) {
+        clearInterval(autoPlayInterval);
+      }
+      // Démarrer l'auto-play avec un délai de 4 secondes
+      autoPlayInterval = setInterval(nextSlide, 4000);
+    }
+    
+    function stopAutoPlay() {
+      if (autoPlayInterval) {
+        clearInterval(autoPlayInterval);
+        autoPlayInterval = null;
+      }
+    }
+    
+    // Événements pour les indicateurs
+    indicators.forEach((indicator, index) => {
+      indicator.addEventListener('click', function() {
+        showSlide(index);
+        // Redémarrer l'auto-play après un clic manuel
+        stopAutoPlay();
+        startAutoPlay();
+      });
+    });
+    
+    // Pause au survol, reprise quand on quitte
+    carousel.addEventListener('mouseenter', stopAutoPlay);
+    carousel.addEventListener('mouseleave', function() {
+      // Ne redémarrer que si le panel est visible
+      if (applicationsPanel && applicationsPanel.style.display !== 'none') {
+        startAutoPlay();
+      }
+    });
+    
+    // Observer les changements d'onglets pour démarrer/arrêter l'auto-play
+    const tabInput = document.getElementById('tab-applications');
+    if (tabInput) {
+      tabInput.addEventListener('change', function() {
+        if (this.checked) {
+          // Onglet Applications sélectionné, démarrer l'auto-play après un court délai
+          setTimeout(startAutoPlay, 500);
+        } else {
+          // Onglet Applications désélectionné, arrêter l'auto-play
+          stopAutoPlay();
+        }
+      });
+    }
+    
+    // Démarrer l'auto-play seulement si l'onglet Applications est actif au chargement
+    if (applicationsPanel && applicationsPanel.style.display !== 'none') {
+      // Démarrer après un délai initial pour que la première image reste affichée
+      setTimeout(startAutoPlay, 4000);
+    }
+  })();
+</script>
+  </div>
+</section>
+
+<section class="reseau-section" data-aos="fade-up">
+  <div class="container">
+    <div class="reseau-section-header">
+      <span class="reseau-badge">Fonctionnement</span>
+      <h2 class="reseau-section-title">Comment fonctionne Alterra ?</h2>
+    </div>
+    <div class="reseau-content">
+      <p>Alterra est un réseau de collecte de données construit et maintenu par sa communauté. Contrairement aux réseaux commerciaux ou centralisés, chaque membre participe activement à son développement et à son fonctionnement.</p>
+      <p>Le réseau fonctionne selon un modèle décentralisé : les passerelles sont installées par les membres de la communauté sur leurs propres sites (toits, bâtiments, espaces publics). Chaque nouvelle passerelle étend la couverture du réseau et renforce sa résilience. Plus il y a de passerelles, plus le réseau est robuste et performant.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reseau-section reseau-section-alt" data-aos="fade-up">
+  <div class="container">
+    <div class="reseau-section-header">
+      <span class="reseau-badge">Applications</span>
+      <h2 class="reseau-section-title">Les applications possibles</h2>
+    </div>
+    <div class="reseau-applications-cta">
+      <a href="/usages/#agriculture" class="application-cta-button" data-aos="fade-up" data-aos-delay="100">
+        <span class="application-cta-icon">🌾</span>
+        <span class="application-cta-title">Agriculture</span>
+        <span class="application-cta-arrow">→</span>
+      </a>
+      <a href="/usages/#environnement" class="application-cta-button" data-aos="fade-up" data-aos-delay="200">
+        <span class="application-cta-icon">🌍</span>
+        <span class="application-cta-title">Environnement</span>
+        <span class="application-cta-arrow">→</span>
+      </a>
+      <a href="/usages/#gestion-ressources" class="application-cta-button" data-aos="fade-up" data-aos-delay="300">
+        <span class="application-cta-icon">💧</span>
+        <span class="application-cta-title">Gestion des ressources</span>
+        <span class="application-cta-arrow">→</span>
+      </a>
+      <a href="/usages/#usages-citoyens" class="application-cta-button" data-aos="fade-up" data-aos-delay="400">
+        <span class="application-cta-icon">👥</span>
+        <span class="application-cta-title">Usages citoyens</span>
+        <span class="application-cta-arrow">→</span>
+      </a>
+      <a href="/usages/#education" class="application-cta-button" data-aos="fade-up" data-aos-delay="500">
+        <span class="application-cta-icon">🎓</span>
+        <span class="application-cta-title">Éducation</span>
+        <span class="application-cta-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="reseau-section" data-aos="fade-up">
+  <div class="container">
+    <div class="reseau-section-header">
+      <span class="reseau-badge">Valeurs</span>
+      <h2 class="reseau-section-title">Les principes du réseau</h2>
+    </div>
+    <div class="reseau-principles">
+      <div class="principle-box" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="principle-box-title">Maîtrise des données</h3>
+        <p>Les données restent la propriété de leurs producteurs. Aucune exploitation sans consentement explicite. Respect de la vie privée et transparence.</p>
+      </div>
+      <div class="principle-box" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="principle-box-title">Ouverture et pédagogie</h3>
+        <p>Technologies ouvertes et documentées. Le réseau est un support d'apprentissage, d'expérimentation et de transmission.</p>
+      </div>
+      <div class="principle-box" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="principle-box-title">Entraide et coopération</h3>
+        <p>Bienveillance et partage d'expérience. La coopération prime sur la compétition.</p>
+      </div>
+      <div class="principle-box" data-aos="fade-up" data-aos-delay="400">
+        <h3 class="principle-box-title">Ancrage territorial</h3>
+        <p>Répondre aux besoins locaux. Utiliser les données localement, au plus près du terrain, pour créer de la valeur partagée.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reseau-cta" data-aos="fade-up">
+  <div class="container">
+    <div class="reseau-cta-content">
+      <div class="reseau-cta-text">
+        <span class="reseau-badge">Rejoignez-nous</span>
+        <h2 class="reseau-cta-title">Prêt à contribuer au réseau Alterra ?</h2>
+        <p class="reseau-cta-description">Chaque contribution renforce le réseau et bénéficie à toute la communauté. Découvrez comment vous pouvez participer à ce projet collectif.</p>
+      </div>
+      <div class="reseau-cta-action">
+        <a href="/contribuer/" class="reseau-cta-button">Contribuer</a>
+      </div>
+    </div>
+  </div>
+</section>
