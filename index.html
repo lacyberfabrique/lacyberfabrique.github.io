@@ -2,123 +2,220 @@
 layout: index
 title: "Alterra"
 description: "Réseau participatif de collecte de données, construit par sa communauté pour le territoire"
-heroHeading: "Prenez le contrôle du réseau"
-heroSubHeading: "Connectez vos données avec votre territoire"
-heroButton: "Découvrir"
-heroButtonLink: "/reseau/"
-heroButtonSecondary: "Rejoindre"
-heroButtonSecondaryLink: "/contribuer/"
+heroHeading: "Vos données, votre réseau"
+heroSubHeading: "Déployez, connectez, décidez."
 ---
 
-<!-- Section 1: Pourquoi Alterra ? (Texte gauche, Image droite) -->
-<section class="content-section">
+<!-- Section 1: Vos avantages -->
+<section class="content-section" data-aos="fade-up">
   <div class="container">
-    <div class="row gx-0">
-      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="300">
-        <div class="content">
-          <h3 class="section-subtitle">Pourquoi Alterra ?</h3>
-          <h2 class="section-title">Construire localement une infrastructure utile et partagée</h2>
-          <p>Alterra construit localement une infrastructure utile, ouverte et partagée, au service du territoire et de ses habitants.</p>
-          <p>Alterra ne repose pas sur des équipements techniques, mais sur une communauté qui coopère, mutualise et s'implique dans un projet commun.</p>
+    <div class="section-header text-center">
+      <h2 class="section-title">Pourquoi choisir Alterra ?</h2>
+      <p class="section-description">Un réseau conçu pour vous donner le contrôle total sur vos données</p>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="benefit-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+            <path d="M2 12h20"/>
+          </svg>
         </div>
+        <h3 class="benefit-title">Jusqu'à 10 km de portée</h3>
+        <p class="benefit-description">Collectez des données sur de longues distances, même dans les zones les plus reculées de votre territoire.</p>
       </div>
-      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="400">
-        <img src="{{ '/assets/images/landing-2.png' | relative_url }}" class="img-fluid" alt="Illustration représentant la vision d'Alterra">
+      <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="benefit-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+        </div>
+        <h3 class="benefit-title">Sans abonnement opérateur</h3>
+        <p class="benefit-description">Aucun forfait mensuel, aucune dépendance aux opérateurs. Vos données transitent par votre propre infrastructure.</p>
+      </div>
+      <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="benefit-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+        </div>
+        <h3 class="benefit-title">Données 100% maîtrisées</h3>
+        <p class="benefit-description">Vos données restent locales et vous appartiennent. Pas de cloud externe, pas de revente, pas de surveillance.</p>
+      </div>
+      <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="benefit-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18.36 6.64a9 9 0 1 1-12.73 0"/>
+            <line x1="12" y1="2" x2="12" y2="12"/>
+          </svg>
+        </div>
+        <h3 class="benefit-title">Faible consommation</h3>
+        <p class="benefit-description">Vos capteurs fonctionnent plusieurs années sur une simple pile. Idéal pour les installations autonomes.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Section 2: Un réseau que l'on construit ensemble (Image gauche, Texte droite) -->
-<section class="content-section content-section-alt">
+<!-- Section 2: Comment ça marche -->
+<section class="content-section content-section-alt" data-aos="fade-up">
   <div class="container">
-    <div class="row gx-0">
-      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="300">
-        <img src="{{ '/assets/images/landing-3.png' | relative_url }}" class="img-fluid" alt="Illustration représentant la construction collective du réseau">
+    <div class="section-header text-center">
+      <h2 class="section-title">Comment ça marche ?</h2>
+      <p class="section-description">En 3 étapes, passez de l'idée à la donnée exploitable</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="step-number">1</div>
+        <h3 class="step-title">Installez vos capteurs</h3>
+        <p class="step-description">Déployez des capteurs LoRaWAN compatibles sur vos sites : champs, bâtiments, équipements. Aucune configuration complexe.</p>
       </div>
-      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="400">
-        <div class="content">
-          <h3 class="section-subtitle">Un réseau que l'on construit ensemble</h3>
-          <h2 class="section-title">L'engagement volontaire au cœur du projet</h2>
-          <p>Alterra se construit ensemble. Son existence repose sur l'engagement volontaire de sa communauté.</p>
-          <p>Chaque contribution fait vivre le réseau : passerelle, temps, compétences ou échanges. Cet engagement collectif fonde Alterra.</p>
-        </div>
+      <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="step-number">2</div>
+        <h3 class="step-title">Connectez au réseau</h3>
+        <p class="step-description">Vos capteurs transmettent automatiquement leurs données aux passerelles Alterra. Le réseau couvre votre territoire.</p>
+      </div>
+      <div class="step-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="step-number">3</div>
+        <h3 class="step-title">Exploitez vos données</h3>
+        <p class="step-description">Visualisez, analysez et automatisez grâce aux outils fournis : tableaux de bord, alertes, intégrations.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Section 3: Une infrastructure mise en commun (Texte gauche, Image droite) -->
-<section class="content-section">
+<!-- Section 3: Cas d'usage -->
+<section class="content-section" data-aos="fade-up">
   <div class="container">
-    <div class="row gx-0">
-      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="300">
-        <div class="content">
-          <h3 class="section-subtitle">Une infrastructure mise en commun</h3>
-          <h2 class="section-title">La mutualisation au service de tous</h2>
-          <p>Alterra mutualise des équipements. Les passerelles, installées par la communauté, restent la propriété de leurs contributeurs mais forment une infrastructure commune.</p>
-          <p>Cette mutualisation crée une couverture plus large et résiliente. Chaque passerelle renforce le réseau et bénéficie à tous les usages.</p>
-        </div>
+    <div class="section-header text-center">
+      <h2 class="section-title">Pour quels usages ?</h2>
+      <p class="section-description">Des applications concrètes pour votre territoire</p>
+    </div>
+    <div class="usecases-grid">
+      <div class="usecase-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="usecase-icon">🌾</div>
+        <h3 class="usecase-title">Agriculture</h3>
+        <p class="usecase-description">Surveillance des cultures, irrigation intelligente, suivi du bétail, stations météo connectées.</p>
       </div>
-      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="400">
-        <img src="{{ '/assets/images/landing-4.png' | relative_url }}" class="img-fluid" alt="Illustration représentant l'infrastructure mutualisée">
+      <div class="usecase-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="usecase-icon">🌿</div>
+        <h3 class="usecase-title">Environnement</h3>
+        <p class="usecase-description">Qualité de l'air, niveau des cours d'eau, suivi de la biodiversité, alertes pollution.</p>
+      </div>
+      <div class="usecase-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="usecase-icon">💧</div>
+        <h3 class="usecase-title">Ressources</h3>
+        <p class="usecase-description">Comptage d'eau, suivi des réservoirs, détection de fuites, gestion énergétique.</p>
+      </div>
+      <div class="usecase-card" data-aos="fade-up" data-aos-delay="250">
+        <div class="usecase-icon">🏘️</div>
+        <h3 class="usecase-title">Collectivités</h3>
+        <p class="usecase-description">Éclairage public, stationnement, gestion des déchets, monitoring des bâtiments.</p>
+      </div>
+      <div class="usecase-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="usecase-icon">🎓</div>
+        <h3 class="usecase-title">Éducation</h3>
+        <p class="usecase-description">Projets pédagogiques, formations IoT, sensibilisation aux données environnementales.</p>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top: 2rem;">
+      <a href="/usages/" class="btn-outline">Découvrir tous les usages →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Section 4: Offres -->
+<section class="content-section content-section-alt" data-aos="fade-up">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title">Choisissez votre formule</h2>
+      <p class="section-description">Contribuez au réseau, réduisez votre cotisation</p>
+    </div>
+    <div class="pricing-grid">
+      <!-- Pionnier -->
+      <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="pricing-header">
+          <h3 class="pricing-name">Pionnier</h3>
+          <p class="pricing-tagline">Réseau en autonomie totale</p>
+        </div>
+        <div class="pricing-price">
+          <span class="price-amount">0€</span>
+          <span class="price-period">/an</span>
+        </div>
+        <div class="pricing-contribution">
+          <span class="contribution-label">Vous apportez</span>
+          <p>Une gateway + lieu + connexion internet</p>
+        </div>
+        <ul class="pricing-features">
+          <li><svg class="check-icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Accès au réseau Alterra</li>
+          <li class="feature-disabled"><svg class="cross-icon" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg> Outils d'exploitation</li>
+          <li class="feature-disabled"><svg class="cross-icon" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg> Accès au FabLab</li>
+          <li class="feature-disabled"><svg class="cross-icon" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg> Support communautaire</li>
+        </ul>
+        <a href="/rejoindre/" class="pricing-button">Devenir Pionnier</a>
+      </div>
+      <!-- Bâtisseur -->
+      <div class="pricing-card pricing-card-featured" data-aos="fade-up" data-aos-delay="200">
+        <div class="pricing-badge">Recommandé</div>
+        <div class="pricing-header">
+          <h3 class="pricing-name">Bâtisseur</h3>
+          <p class="pricing-tagline">Étendez le réseau</p>
+        </div>
+        <div class="pricing-price">
+          <span class="price-amount">60€</span>
+          <span class="price-period">/an</span>
+          <span class="price-discount">-50%</span>
+        </div>
+        <div class="pricing-contribution">
+          <span class="contribution-label">Vous apportez</span>
+          <p>Une gateway + lieu + connexion internet</p>
+        </div>
+        <ul class="pricing-features">
+          <li><svg class="check-icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Accès au réseau Alterra</li>
+          <li><svg class="check-icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Outils d'exploitation (n8n, ThingsBoard)</li>
+          <li><svg class="check-icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Accès au FabLab et machines</li>
+          <li><svg class="check-icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Support communautaire</li>
+        </ul>
+        <a href="/rejoindre/" class="pricing-button pricing-button-featured">Devenir Bâtisseur</a>
+      </div>
+      <!-- Explorateur -->
+      <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="pricing-header">
+          <h3 class="pricing-name">Explorateur</h3>
+          <p class="pricing-tagline">Utilisez le réseau existant</p>
+        </div>
+        <div class="pricing-price">
+          <span class="price-amount">120€</span>
+          <span class="price-period">/an</span>
+        </div>
+        <div class="pricing-contribution">
+          <span class="contribution-label">Vous apportez</span>
+          <p>Aucune contribution matérielle</p>
+        </div>
+        <ul class="pricing-features">
+          <li><svg class="check-icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Accès au réseau Alterra</li>
+          <li><svg class="check-icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Outils d'exploitation (n8n, ThingsBoard)</li>
+          <li><svg class="check-icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Accès au FabLab et machines</li>
+          <li><svg class="check-icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Support communautaire</li>
+        </ul>
+        <a href="/rejoindre/" class="pricing-button">Devenir Explorateur</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Section 4: Un ancrage territorial (Image gauche, Texte droite) -->
-<section class="content-section content-section-alt">
+<!-- Section CTA -->
+<section class="reseau-cta" data-aos="fade-up">
   <div class="container">
-    <div class="row gx-0">
-      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="300">
-        <img src="{{ '/assets/images/landing-5.png' | relative_url }}" class="img-fluid" alt="Illustration représentant l'ancrage territorial">
+    <div class="reseau-cta-content">
+      <div class="reseau-cta-text">
+        <h2 class="reseau-cta-title">Prêt à déployer votre réseau ?</h2>
+        <p class="reseau-cta-description">Découvrez comment Alterra peut répondre à vos besoins ou contactez-nous pour en discuter.</p>
       </div>
-      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="400">
-        <div class="content">
-          <h3 class="section-subtitle">Un ancrage territorial</h3>
-          <h2 class="section-title">Répondre aux besoins locaux</h2>
-          <p>Alterra répond aux besoins locaux : agriculture, environnement, gestion des ressources, usages citoyens et éducatifs.</p>
-          <p>Les données sont utilisées localement, au plus près du terrain, pour créer de la valeur pour chaque membre.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Section 5: Une communauté fondée sur l'entraide (Texte gauche, Image droite) -->
-<section class="content-section">
-  <div class="container">
-    <div class="row gx-0">
-      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="300">
-        <div class="content">
-          <h3 class="section-subtitle">Une communauté fondée sur l'entraide</h3>
-          <h2 class="section-title">Coopération et partage d'expérience</h2>
-          <p>Alterra repose sur la coopération : entraide, bienveillance et partage d'expérience.</p>
-          <p>Installation, résolution de problèmes, accompagnement : autant d'occasions de renforcer les liens et faire progresser le réseau ensemble.</p>
-        </div>
-      </div>
-      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="400">
-        <img src="{{ '/assets/images/landing-6.png' | relative_url }}" class="img-fluid" alt="Illustration représentant la communauté et l'entraide">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Section 6: Un bien commun (Image gauche, Texte droite) -->
-<section class="content-section content-section-alt">
-  <div class="container">
-    <div class="row gx-0">
-      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="300">
-        <img src="{{ '/assets/images/landing-7.png' | relative_url }}" class="img-fluid" alt="Illustration représentant Alterra comme bien commun">
-      </div>
-      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="400">
-        <div class="content">
-          <h3 class="section-subtitle">Un bien commun</h3>
-          <h2 class="section-title">Un réseau qui dépasse la dimension technique</h2>
-          <p>Alterra est un réseau participatif. Il naît d'un engagement collectif, d'une confiance partagée et d'une volonté commune de construire une infrastructure locale, ouverte et utile.</p>
-          <p>En adhérant à ces valeurs, chaque membre transforme le réseau en bien commun territorial.</p>
-        </div>
+      <div class="reseau-cta-action">
+        <a href="/reseau/" class="reseau-cta-button">En savoir plus</a>
+        <a href="/contact/" class="reseau-cta-button">Nous contacter</a>
       </div>
     </div>
   </div>

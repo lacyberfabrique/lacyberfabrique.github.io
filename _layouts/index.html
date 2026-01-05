@@ -18,20 +18,15 @@ layout: default
       {% if page.heroSubHeading %}
       <p class="hero-description header-animation">{{ page.heroSubHeading }}</p>
       {% endif %}
-      {% if page.heroButton %}
-      <div class="hero-cta header-animation">
-        <a href="{{ page.heroButtonLink | default: '/reseau/' }}" class="btn-primary" data-scroll-navbar>{{ page.heroButton }}</a>
-        {% if page.heroButtonSecondary %}
-        <a href="{{ page.heroButtonSecondaryLink | default: '/contribuer/' }}" class="btn-secondary" data-scroll-navbar>{{ page.heroButtonSecondary }}</a>
-        {% endif %}
-      </div>
-      {% endif %}
     </div>
-    <!-- Icône scroll down -->
-    <a href="#content" class="hero-scroll-down" aria-label="Aller au contenu" data-scroll-navbar>
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M6 9l6 6 6-6"/>
-      </svg>
+    <!-- Bouton scroll down -->
+    <a href="#content" class="hero-scroll-button" aria-label="Aller au contenu" data-scroll-navbar>
+      <span class="hero-scroll-text">Commencer</span>
+      <span class="hero-scroll-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </span>
     </a>
   </div>
 </section>

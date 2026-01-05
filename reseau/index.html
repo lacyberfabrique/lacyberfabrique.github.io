@@ -1,12 +1,12 @@
 ---
 layout: page
-description: "Comprendre comment fonctionne le réseau Alterra basé sur LoRaWAN et comment il est construit par sa communauté."
+description: "Découvrez comment fonctionne le réseau Alterra : technologie LoRaWAN, architecture et applications."
 ---
 
 <div class="reseau-hero">
   <div class="container">
     <h1 class="reseau-title">Le réseau Alterra</h1>
-    <p class="reseau-subtitle">Un réseau participatif de collecte de données basé sur LoRaWAN, <br> construit et maintenu par sa communauté.</p>
+    <p class="reseau-subtitle">Une infrastructure IoT longue portée, <br>sans abonnement, construite par sa communauté.</p>
   </div>
 </div>
 
@@ -14,57 +14,37 @@ description: "Comprendre comment fonctionne le réseau Alterra basé sur LoRaWAN
   <div class="container">
     <div class="reseau-section-header">
       <span class="reseau-badge">Technologie</span>
-      <h2 class="reseau-section-title">Qu'est-ce que LoRaWAN ?</h2>
+      <h2 class="reseau-section-title">LoRaWAN : longue portée, faible consommation</h2>
     </div>
     <div class="reseau-content">
-      <p>Alterra utilise la technologie <strong>LoRaWAN</strong> (Long Range Wide Area Network), un protocole de communication sans fil conçu spécifiquement pour l'Internet des Objets (IoT). LoRaWAN permet des communications longue distance avec une consommation d'énergie très faible.</p>
-      <p>Contrairement au Wi-Fi ou à la 4G/5G, LoRaWAN est optimisé pour transmettre de petites quantités de données sur de très longues distances, jusqu'à 10 kilomètres en zone rurale et 2 kilomètres en zone urbaine. Cette technologie fonctionne dans des bandes de fréquences libres (ISM), sans nécessiter de licence ni d'abonnement.</p>
+      <p>Alterra utilise <strong>LoRaWAN</strong>, un protocole sans fil conçu pour l'Internet des Objets. Contrairement au Wi-Fi ou à la 4G/5G, LoRaWAN transmet de petites quantités de données sur de très longues distances - jusqu'à <strong>10 km en zone rurale</strong>.</p>
+    </div>
+    <div class="reseau-advantages reseau-advantages-compact">
+      <div class="advantage-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="advantage-icon">📡</div>
+        <h3 class="advantage-title">Portée 10 km</h3>
+        <p class="advantage-text">Une passerelle couvre plusieurs km²</p>
+      </div>
+      <div class="advantage-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="advantage-icon">🔋</div>
+        <h3 class="advantage-title">Autonomie années</h3>
+        <p class="advantage-text">Capteurs sur batterie longue durée</p>
+      </div>
+      <div class="advantage-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="advantage-icon">💰</div>
+        <h3 class="advantage-title">Sans abonnement</h3>
+        <p class="advantage-text">Fréquences libres, pas de licence</p>
+      </div>
+      <div class="advantage-item" data-aos="fade-up" data-aos-delay="400">
+        <div class="advantage-icon">🔒</div>
+        <h3 class="advantage-title">Sécurisé</h3>
+        <p class="advantage-text">Chiffrement AES-128 de bout en bout</p>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="reseau-section" data-aos="fade-up">
-  <div class="container">
-    <div class="reseau-section-header">
-      <span class="reseau-badge">Avantages</span>
-      <h2 class="reseau-section-title">Pourquoi LoRaWAN ?</h2>
-    </div>
-    <div class="reseau-advantages">
-      <div class="advantage-item" data-aos="fade-up" data-aos-delay="100">
-        <div class="advantage-icon">📡</div>
-        <h3 class="advantage-title">Longue portée</h3>
-        <p class="advantage-text">Une seule passerelle peut couvrir plusieurs kilomètres carrés, idéal pour un réseau territorial</p>
-      </div>
-      <div class="advantage-item" data-aos="fade-up" data-aos-delay="200">
-        <div class="advantage-icon">🔋</div>
-        <h3 class="advantage-title">Faible consommation</h3>
-        <p class="advantage-text">Les capteurs peuvent fonctionner sur batterie pendant plusieurs années</p>
-      </div>
-      <div class="advantage-item" data-aos="fade-up" data-aos-delay="300">
-        <div class="advantage-icon">💰</div>
-        <h3 class="advantage-title">Coût réduit</h3>
-        <p class="advantage-text">Pas de licence ni d'abonnement, les fréquences sont libres</p>
-      </div>
-      <div class="advantage-item" data-aos="fade-up" data-aos-delay="400">
-        <div class="advantage-icon">🏢</div>
-        <h3 class="advantage-title">Pénétration</h3>
-        <p class="advantage-text">Bonne couverture en intérieur et dans les bâtiments multi-étages</p>
-      </div>
-      <div class="advantage-item" data-aos="fade-up" data-aos-delay="500">
-        <div class="advantage-icon">🔒</div>
-        <h3 class="advantage-title">Sécurité</h3>
-        <p class="advantage-text">Chiffrement AES-128 de bout en bout</p>
-      </div>
-      <div class="advantage-item" data-aos="fade-up" data-aos-delay="600">
-        <div class="advantage-icon">⚡</div>
-        <h3 class="advantage-title">Capacité</h3>
-        <p class="advantage-text">Un réseau peut gérer des millions de messages provenant de milliers de passerelles</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="reseau-section reseau-section-alt" data-aos="fade-up">
   <div class="container">
     <div class="reseau-section-header">
       <span class="reseau-badge">Architecture</span>
@@ -391,21 +371,6 @@ description: "Comprendre comment fonctionne le réseau Alterra basé sur LoRaWAN
     }
   })();
 </script>
-  </div>
-</section>
-
-<section class="reseau-section" data-aos="fade-up">
-  <div class="container">
-    <div class="reseau-section-header">
-      <span class="reseau-badge">Fonctionnement</span>
-      <h2 class="reseau-section-title">Comment fonctionne Alterra ?</h2>
-    </div>
-    <div class="reseau-content">
-      <p>Alterra est un réseau de collecte de données construit et maintenu par sa communauté. Contrairement aux réseaux commerciaux ou centralisés, chaque membre participe activement à son développement et à son fonctionnement.</p>
-      <p>Le réseau fonctionne selon un modèle décentralisé : les passerelles sont installées par les membres de la communauté sur leurs propres sites (toits, bâtiments, espaces publics). Chaque nouvelle passerelle étend la couverture du réseau et renforce sa résilience. Plus il y a de passerelles, plus le réseau est robuste et performant.</p>
-    </div>
-  </div>
-</section>
 
 <section class="reseau-section reseau-section-alt" data-aos="fade-up">
   <div class="container">
@@ -443,43 +408,17 @@ description: "Comprendre comment fonctionne le réseau Alterra basé sur LoRaWAN
   </div>
 </section>
 
-<section class="reseau-section" data-aos="fade-up">
-  <div class="container">
-    <div class="reseau-section-header">
-      <span class="reseau-badge">Valeurs</span>
-      <h2 class="reseau-section-title">Les principes du réseau</h2>
-    </div>
-    <div class="reseau-principles">
-      <div class="principle-box" data-aos="fade-up" data-aos-delay="100">
-        <h3 class="principle-box-title">Maîtrise des données</h3>
-        <p>Les données restent la propriété de leurs producteurs. Aucune exploitation sans consentement explicite. Respect de la vie privée et transparence.</p>
-      </div>
-      <div class="principle-box" data-aos="fade-up" data-aos-delay="200">
-        <h3 class="principle-box-title">Ouverture et pédagogie</h3>
-        <p>Technologies ouvertes et documentées. Le réseau est un support d'apprentissage, d'expérimentation et de transmission.</p>
-      </div>
-      <div class="principle-box" data-aos="fade-up" data-aos-delay="300">
-        <h3 class="principle-box-title">Entraide et coopération</h3>
-        <p>Bienveillance et partage d'expérience. La coopération prime sur la compétition.</p>
-      </div>
-      <div class="principle-box" data-aos="fade-up" data-aos-delay="400">
-        <h3 class="principle-box-title">Ancrage territorial</h3>
-        <p>Répondre aux besoins locaux. Utiliser les données localement, au plus près du terrain, pour créer de la valeur partagée.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="reseau-cta" data-aos="fade-up">
   <div class="container">
     <div class="reseau-cta-content">
       <div class="reseau-cta-text">
-        <span class="reseau-badge">Rejoignez-nous</span>
-        <h2 class="reseau-cta-title">Prêt à contribuer au réseau Alterra ?</h2>
-        <p class="reseau-cta-description">Chaque contribution renforce le réseau et bénéficie à toute la communauté. Découvrez comment vous pouvez participer à ce projet collectif.</p>
+        <span class="reseau-badge">Passez à l'action</span>
+        <h2 class="reseau-cta-title">Prêt à déployer votre réseau ?</h2>
+        <p class="reseau-cta-description">Utilisez le réseau existant ou contribuez à son extension. Choisissez la formule qui vous correspond.</p>
       </div>
       <div class="reseau-cta-action">
-        <a href="/contribuer/" class="reseau-cta-button">Contribuer</a>
+        <a href="/rejoindre/" class="reseau-cta-button">Voir les formules</a>
+        <a href="/contact/" class="reseau-cta-button reseau-cta-button-secondary">Nous contacter</a>
       </div>
     </div>
   </div>

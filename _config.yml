@@ -17,11 +17,11 @@ navigation:
   - title: Le Réseau
     url: /reseau/
     weight: 1
-  - title: Contribuer
-    url: /contribuer/
-    weight: 2
-  - title: Usages
+  - title: Les Usages
     url: /usages/
+    weight: 2
+  - title: Rejoindre
+    url: /rejoindre/
     weight: 3
   - title: La Charte
     url: /charte/
