@@ -3806,6 +3806,20 @@ body.landing-page #content {
   margin: 0;
 }
 
+/* Style neutre pour l'Explorateur (sans contribution matérielle) */
+.pricing-contribution-neutral {
+  background: rgba(100, 100, 100, 0.08);
+  border: 1px dashed rgba(100, 100, 100, 0.3);
+}
+
+.pricing-contribution-neutral .contribution-label {
+  color: #888888;
+}
+
+.pricing-contribution-neutral p {
+  color: #666666;
+}
+
 .pricing-features {
   list-style: none;
   padding: 0;
@@ -4147,6 +4161,22 @@ body.landing-page #content {
   left: 0;
   color: #73b909;
   font-weight: bold;
+}
+
+/* Style neutre pour l'Explorateur (clé en main) */
+.offer-contribution-neutral {
+  background: rgba(100, 100, 100, 0.05);
+  border-radius: 8px;
+  padding: 0.75rem;
+  border: 1px dashed rgba(100, 100, 100, 0.2);
+}
+
+.offer-contribution-neutral h4 {
+  color: #888888;
+}
+
+.offer-contribution-neutral li::before {
+  color: #888888;
 }
 
 .offer-benefits li {
