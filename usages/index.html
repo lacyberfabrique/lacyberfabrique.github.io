@@ -458,5 +458,69 @@ description: "Découvrez les cas d'usage du réseau Alterra : agriculture, envir
       initCarousel(carousel);
     });
   })();
+
+  // Lightbox pour les images
+  (function() {
+    'use strict';
+
+    // Créer l'élément lightbox
+    const lightbox = document.createElement('div');
+    lightbox.className = 'lightbox';
+    lightbox.innerHTML = `
+      <div class="lightbox-content">
+        <button class="lightbox-close" aria-label="Fermer">&times;</button>
+        <img class="lightbox-image" src="" alt="">
+        <div class="lightbox-caption"></div>
+      </div>
+    `;
+    document.body.appendChild(lightbox);
+
+    const lightboxImage = lightbox.querySelector('.lightbox-image');
+    const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+    const lightboxClose = lightbox.querySelector('.lightbox-close');
+
+    // Ouvrir la lightbox
+    function openLightbox(img, caption) {
+      lightboxImage.src = img.src;
+      lightboxImage.alt = img.alt;
+      lightboxCaption.textContent = caption || '';
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden'; // Empêcher le scroll
+    }
+
+    // Fermer la lightbox
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = ''; // Réactiver le scroll
+    }
+
+    // Ajouter les événements sur toutes les images de la page usages
+    const usagesImages = document.querySelectorAll('.usages-image');
+    usagesImages.forEach(img => {
+      img.style.cursor = 'pointer';
+      img.addEventListener('click', function() {
+        const figure = this.closest('figure');
+        const caption = figure ? figure.querySelector('.usages-caption')?.textContent : '';
+        openLightbox(this, caption);
+      });
+    });
+
+    // Fermer au clic sur le bouton
+    lightboxClose.addEventListener('click', closeLightbox);
+
+    // Fermer au clic sur le fond (mais pas sur l'image)
+    lightbox.addEventListener('click', function(e) {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    // Fermer avec la touche ESC
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        closeLightbox();
+      }
+    });
+  })();
 </script>
 
