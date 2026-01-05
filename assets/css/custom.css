@@ -1423,6 +1423,23 @@ body.landing-page #content {
   border-color: #73b909;
 }
 
+/* Style pour les indicateurs de carousel dans les sections reseau avec fond blanc */
+.reseau-section .carousel-indicators {
+  background-color: rgba(30, 41, 57, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reseau-section .carousel-indicator {
+  border: none;
+  background-color: rgba(30, 41, 57, 0.3);
+}
+
+.reseau-section .carousel-indicator.active,
+.reseau-section .carousel-indicator:hover {
+  background-color: #73b909;
+  border-color: #73b909;
+}
+
 @media (max-width: 767px) {
   .reseau-tab-carousel {
     min-width: 100%;
