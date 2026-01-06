@@ -3498,8 +3498,7 @@ body.landing-page #content {
 .section-header .section-description {
   font-size: 1.1rem;
   color: #555555;
-  max-width: 600px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 /* ============================================
@@ -3753,7 +3752,7 @@ body.landing-page #content {
 }
 
 .pricing-price {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0;
   position: relative;
   display: inline-block;
 }
@@ -3769,6 +3768,23 @@ body.landing-page #content {
   font-size: 0.95rem;
   color: #666666;
   font-weight: 500;
+}
+
+.pricing-note {
+  font-size: 0.6rem;
+  color: #888888;
+  font-style: italic;
+  text-align: center;
+  margin: 0.1rem 0 1rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.pricing-header .pricing-note,
+.pricing-header p.pricing-note {
+  font-size: 0.6rem !important;
 }
 
 .price-discount {
@@ -3818,6 +3834,19 @@ body.landing-page #content {
 
 .pricing-contribution-neutral p {
   color: #666666;
+}
+
+.pricing-benefits {
+  margin-bottom: 0.5rem;
+}
+
+.benefits-label {
+  font-size: 0.7rem;
+  color: #73b909;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
 }
 
 .pricing-features {
@@ -4030,6 +4059,7 @@ body.landing-page #content {
   gap: 1.5rem;
   max-width: 1100px;
   margin: 0 auto;
+  align-items: start;
 }
 
 .offer-card {
@@ -4095,6 +4125,7 @@ body.landing-page #content {
   justify-content: center;
   gap: 0.25rem;
   position: relative;
+  margin-bottom: 0;
 }
 
 .offer-amount {
@@ -4109,6 +4140,21 @@ body.landing-page #content {
   color: #666666;
 }
 
+.offer-header .offer-note,
+.offer-note {
+  font-size: 0.6rem !important;
+  color: #888888 !important;
+  font-style: italic !important;
+  text-align: center;
+  margin: 0.1rem 0 0 0 !important;
+  font-weight: 400 !important;
+  line-height: 1.2 !important;
+}
+
+.offer-header p.offer-note {
+  font-size: 0.6rem !important;
+}
+
 .offer-discount {
   background: #73b909;
   color: #ffffff;
@@ -4121,12 +4167,19 @@ body.landing-page #content {
 
 .offer-body {
   flex-grow: 1;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 1rem;
+  align-items: start;
 }
 
 .offer-contribution,
 .offer-benefits,
 .offer-ideal {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .offer-contribution h4,
@@ -4145,6 +4198,7 @@ body.landing-page #content {
   list-style: none;
   padding: 0;
   margin: 0;
+  flex-grow: 1;
 }
 
 .offer-contribution li {
@@ -4200,6 +4254,7 @@ body.landing-page #content {
   color: #555555;
   margin: 0;
   font-style: italic;
+  flex-grow: 1;
 }
 
 .offer-button {

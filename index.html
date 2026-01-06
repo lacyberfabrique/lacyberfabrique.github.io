@@ -3,13 +3,108 @@ layout: index
 title: "Alterra"
 description: "Réseau participatif de collecte de données, construit par sa communauté pour le territoire"
 heroHeading: "Vos données, votre réseau"
-heroSubHeading: "Déployez, connectez, décidez."
+heroSubHeading: "Déployez, connectez, décidez"
 ---
 
-<!-- Section 1: Vos avantages -->
+<!-- Section 1: Alterra c'est quoi ? -->
+<section class="usages-section" data-aos="fade-up">
+  <div class="container">
+    <div class="usages-section-header" style="text-align: left;">
+      <h2 class="usages-section-title">Alterra c'est quoi ?</h2>
+    </div>
+    <div class="usages-content">
+      <div class="usages-text">
+        <p>Alterra transforme vos données en décisions. De la collecte à l'action, tout en un seul endroit.</p>
+        <p><strong>Collecte</strong> : Vos capteurs transmettent leurs données vers le réseau. Tous vos dispositifs connectés, centralisés.</p>
+        <p><strong>Exploitation</strong> : Transformez vos données en actions. Traitement, automatisation, règles métier sans code.</p>
+        <p><strong>Visualisation</strong> : Tableaux de bord en temps réel. Vos données visibles et actionnables.</p>
+        <p><strong>Interaction</strong> : Contrôlez à distance. Alertes automatiques. Vos données travaillent pour vous.</p>
+        <p>Un réseau participatif, construit par sa communauté pour le territoire.</p>
+      </div>
+      <div class="usages-visual">
+        <figure class="usages-figure">
+          <img
+              class="usages-image"
+              src="{{ '/assets/images/landing-1.png' | relative_url }}"
+              alt="Illustration du réseau Alterra"
+          />
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 2: Comment ça marche -->
+<section class="content-section content-section-alt" data-aos="fade-up">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Comment ça marche ?</h2>
+      <p class="section-description">En 3 étapes, passez de l'idée à la donnée exploitable</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="step-number">1</div>
+        <h3 class="step-title">Installez vos capteurs</h3>
+        <p class="step-description">Déployez des capteurs LoRaWAN compatibles sur vos sites : champs, bâtiments, équipements. Aucune configuration complexe.</p>
+        </div>
+      <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="step-number">2</div>
+        <h3 class="step-title">Connectez au réseau</h3>
+        <p class="step-description">Vos capteurs transmettent automatiquement leurs données aux passerelles Alterra. Le réseau couvre votre territoire.</p>
+      </div>
+      <div class="step-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="step-number">3</div>
+        <h3 class="step-title">Exploitez vos données</h3>
+        <p class="step-description">Visualisez, analysez et automatisez grâce aux outils fournis : tableaux de bord, alertes, intégrations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 3: Pour quels usages -->
 <section class="content-section" data-aos="fade-up">
   <div class="container">
-    <div class="section-header text-center">
+    <div class="section-header">
+      <h2 class="section-title">Pour quels usages ?</h2>
+      <p class="section-description">Des applications concrètes pour votre territoire</p>
+    </div>
+    <div class="usecases-grid">
+      <div class="usecase-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="usecase-icon">🌾</div>
+        <h3 class="usecase-title">Agriculture</h3>
+        <p class="usecase-description">Surveillance des cultures, irrigation intelligente, suivi du bétail, stations météo connectées</p>
+      </div>
+      <div class="usecase-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="usecase-icon">🌿</div>
+        <h3 class="usecase-title">Environnement</h3>
+        <p class="usecase-description">Qualité de l'air, niveau des cours d'eau, suivi de la biodiversité, alertes pollution</p>
+      </div>
+      <div class="usecase-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="usecase-icon">💧</div>
+        <h3 class="usecase-title">Ressources</h3>
+        <p class="usecase-description">Comptage d'eau, suivi des réservoirs, détection de fuites, gestion énergétique</p>
+      </div>
+      <div class="usecase-card" data-aos="fade-up" data-aos-delay="250">
+        <div class="usecase-icon">🏘️</div>
+        <h3 class="usecase-title">Collectivités</h3>
+        <p class="usecase-description">Éclairage public, stationnement, gestion des déchets, monitoring des bâtiments</p>
+        </div>
+      <div class="usecase-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="usecase-icon">🎓</div>
+        <h3 class="usecase-title">Éducation</h3>
+        <p class="usecase-description">Projets pédagogiques, formations IoT, sensibilisation aux données environnementales</p>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top: 2rem;">
+      <a href="/usages/" class="btn-outline">Découvrir tous les usages →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Section 4: Pourquoi choisir Alterra -->
+<section class="content-section content-section-alt" data-aos="fade-up">
+  <div class="container">
+    <div class="section-header">
       <h2 class="section-title">Pourquoi choisir Alterra ?</h2>
       <p class="section-description">Un réseau conçu pour vous donner le contrôle total sur vos données</p>
     </div>
@@ -40,7 +135,7 @@ heroSubHeading: "Déployez, connectez, décidez."
             <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
             <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
           </svg>
-        </div>
+    </div>
         <h3 class="benefit-title">Données 100% maîtrisées</h3>
         <p class="benefit-description">Vos données restent locales et vous appartiennent. Pas de cloud externe, pas de revente, pas de surveillance.</p>
       </div>
@@ -58,79 +153,12 @@ heroSubHeading: "Déployez, connectez, décidez."
   </div>
 </section>
 
-<!-- Section 2: Comment ça marche -->
-<section class="content-section content-section-alt" data-aos="fade-up">
-  <div class="container">
-    <div class="section-header text-center">
-      <h2 class="section-title">Comment ça marche ?</h2>
-      <p class="section-description">En 3 étapes, passez de l'idée à la donnée exploitable</p>
-    </div>
-    <div class="steps-grid">
-      <div class="step-card" data-aos="fade-up" data-aos-delay="100">
-        <div class="step-number">1</div>
-        <h3 class="step-title">Installez vos capteurs</h3>
-        <p class="step-description">Déployez des capteurs LoRaWAN compatibles sur vos sites : champs, bâtiments, équipements. Aucune configuration complexe.</p>
-      </div>
-      <div class="step-card" data-aos="fade-up" data-aos-delay="200">
-        <div class="step-number">2</div>
-        <h3 class="step-title">Connectez au réseau</h3>
-        <p class="step-description">Vos capteurs transmettent automatiquement leurs données aux passerelles Alterra. Le réseau couvre votre territoire.</p>
-      </div>
-      <div class="step-card" data-aos="fade-up" data-aos-delay="300">
-        <div class="step-number">3</div>
-        <h3 class="step-title">Exploitez vos données</h3>
-        <p class="step-description">Visualisez, analysez et automatisez grâce aux outils fournis : tableaux de bord, alertes, intégrations.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Section 3: Cas d'usage -->
+<!-- Section 5: Les formules -->
 <section class="content-section" data-aos="fade-up">
   <div class="container">
-    <div class="section-header text-center">
-      <h2 class="section-title">Pour quels usages ?</h2>
-      <p class="section-description">Des applications concrètes pour votre territoire</p>
-    </div>
-    <div class="usecases-grid">
-      <div class="usecase-card" data-aos="fade-up" data-aos-delay="100">
-        <div class="usecase-icon">🌾</div>
-        <h3 class="usecase-title">Agriculture</h3>
-        <p class="usecase-description">Surveillance des cultures, irrigation intelligente, suivi du bétail, stations météo connectées.</p>
-      </div>
-      <div class="usecase-card" data-aos="fade-up" data-aos-delay="150">
-        <div class="usecase-icon">🌿</div>
-        <h3 class="usecase-title">Environnement</h3>
-        <p class="usecase-description">Qualité de l'air, niveau des cours d'eau, suivi de la biodiversité, alertes pollution.</p>
-      </div>
-      <div class="usecase-card" data-aos="fade-up" data-aos-delay="200">
-        <div class="usecase-icon">💧</div>
-        <h3 class="usecase-title">Ressources</h3>
-        <p class="usecase-description">Comptage d'eau, suivi des réservoirs, détection de fuites, gestion énergétique.</p>
-      </div>
-      <div class="usecase-card" data-aos="fade-up" data-aos-delay="250">
-        <div class="usecase-icon">🏘️</div>
-        <h3 class="usecase-title">Collectivités</h3>
-        <p class="usecase-description">Éclairage public, stationnement, gestion des déchets, monitoring des bâtiments.</p>
-      </div>
-      <div class="usecase-card" data-aos="fade-up" data-aos-delay="300">
-        <div class="usecase-icon">🎓</div>
-        <h3 class="usecase-title">Éducation</h3>
-        <p class="usecase-description">Projets pédagogiques, formations IoT, sensibilisation aux données environnementales.</p>
-      </div>
-    </div>
-    <div class="text-center" style="margin-top: 2rem;">
-      <a href="/usages/" class="btn-outline">Découvrir tous les usages →</a>
-    </div>
-  </div>
-</section>
-
-<!-- Section 4: Offres -->
-<section class="content-section content-section-alt" data-aos="fade-up">
-  <div class="container">
-    <div class="section-header text-center">
+    <div class="section-header">
       <h2 class="section-title">Choisissez votre formule</h2>
-      <p class="section-description">Contribuez au réseau, réduisez votre cotisation</p>
+      <p class="section-description">Plus vous contribuez, moins vous cotisez</p>
     </div>
     <div class="pricing-grid">
       <!-- Pionnier -->
@@ -143,9 +171,13 @@ heroSubHeading: "Déployez, connectez, décidez."
           <span class="price-amount">0€</span>
           <span class="price-period">/an</span>
         </div>
+        <p class="pricing-note">Adhésion annuelle à l'association</p>
         <div class="pricing-contribution">
           <span class="contribution-label">Vous apportez</span>
-          <p>Une gateway + lieu + connexion internet</p>
+          <p>Une passerelle + lieu + connexion internet</p>
+        </div>
+        <div class="pricing-benefits">
+          <span class="benefits-label">Nous apportons</span>
         </div>
         <ul class="pricing-features">
           <li><svg class="check-icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Accès au réseau Alterra</li>
@@ -156,8 +188,7 @@ heroSubHeading: "Déployez, connectez, décidez."
         <a href="/rejoindre/" class="pricing-button">Devenir Pionnier</a>
       </div>
       <!-- Bâtisseur -->
-      <div class="pricing-card pricing-card-featured" data-aos="fade-up" data-aos-delay="200">
-        <div class="pricing-badge">Recommandé</div>
+      <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
         <div class="pricing-header">
           <h3 class="pricing-name">Bâtisseur</h3>
           <p class="pricing-tagline">Étendez le réseau</p>
@@ -165,11 +196,14 @@ heroSubHeading: "Déployez, connectez, décidez."
         <div class="pricing-price">
           <span class="price-amount">60€</span>
           <span class="price-period">/an</span>
-          <span class="price-discount">-50%</span>
         </div>
+        <p class="pricing-note">Adhésion annuelle à l'association</p>
         <div class="pricing-contribution">
           <span class="contribution-label">Vous apportez</span>
-          <p>Une gateway + lieu + connexion internet</p>
+          <p>Une passerelle + lieu + connexion internet</p>
+        </div>
+        <div class="pricing-benefits">
+          <span class="benefits-label">Nous apportons</span>
         </div>
         <ul class="pricing-features">
           <li><svg class="check-icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Accès au réseau Alterra</li>
@@ -177,7 +211,7 @@ heroSubHeading: "Déployez, connectez, décidez."
           <li><svg class="check-icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Accès au FabLab et machines</li>
           <li><svg class="check-icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Support communautaire</li>
         </ul>
-        <a href="/rejoindre/" class="pricing-button pricing-button-featured">Devenir Bâtisseur</a>
+        <a href="/rejoindre/" class="pricing-button">Devenir Bâtisseur</a>
       </div>
       <!-- Explorateur -->
       <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
@@ -189,9 +223,13 @@ heroSubHeading: "Déployez, connectez, décidez."
           <span class="price-amount">120€</span>
           <span class="price-period">/an</span>
         </div>
-        <div class="pricing-contribution pricing-contribution-neutral">
-          <span class="contribution-label">Clé en main</span>
+        <p class="pricing-note">Adhésion annuelle à l'association</p>
+        <div class="pricing-contribution">
+          <span class="contribution-label">Sans contribution</span>
           <p>Profitez du réseau sans contribuer à l'infrastructure</p>
+        </div>
+        <div class="pricing-benefits">
+          <span class="benefits-label">Nous apportons</span>
         </div>
         <ul class="pricing-features">
           <li><svg class="check-icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg> Accès au réseau Alterra</li>
